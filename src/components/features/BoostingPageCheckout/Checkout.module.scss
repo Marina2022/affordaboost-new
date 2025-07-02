@@ -1,0 +1,291 @@
+.checkoutBlock {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+
+  @media (max-width: 1320px) {
+    flex-wrap: wrap;
+  }
+}
+
+.ranksPart {
+  width: 759px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 1320px) {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}
+
+.generalRankBlock {
+  border-radius: 20px;
+  background: rgba(0, 99, 81, 0.50);
+  padding: 32px 24px;
+}
+
+.checkoutPart {
+  max-width: 519px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: 3px solid #083C32;
+  background: #101513;
+  flex-grow: 1;
+
+  @media (max-width: 1320px) {
+    width: 100%;
+    max-width: 880px;
+    margin: 10px auto 0;
+  }
+}
+
+.rankHeader {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.headerImg {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  margin-right: 16px;
+
+}
+
+.rankImgs {
+  display: flex;
+  margin-bottom: 24px;
+
+  @media (max-width: 660px) {
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin-right: 4px;
+
+    @media (max-width: 660px) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.rankImgItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 7.5px;
+  background: rgba(14, 243, 202, 0.30);
+  cursor: pointer;
+}
+
+.rankImgItemActive {
+  background: rgba(14, 243, 202, 0.80) !important;
+  cursor: unset;
+}
+
+.rankNumbers {
+  display: flex;
+
+  li {
+    margin-right: 4px;
+  }
+}
+
+.rankNumberItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 7.5px;
+  background: rgba(14, 243, 202, 0.30);
+  cursor: pointer;
+}
+
+.rankNumberItemActive {
+  background: rgba(14, 243, 202, 0.80) !important;
+  cursor: unset;
+
+  img {
+    filter: brightness(0);
+  }
+}
+
+.dropdowns {
+  display: flex;
+  //justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+
+
+  @media (max-width: 660px) {
+    flex-wrap: wrap;
+  }
+}
+
+.dropdown {
+  flex-grow: 1;
+  min-height: 20px;
+  width: 270px;
+  max-width: 348px;
+
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.checkoutRanks {
+  margin-top: 16px;
+  display: flex;
+
+  @media (max-width: 1320px) {
+    margin: 16px auto 0;
+  }
+}
+
+.ranksImgWrapper {
+  display: flex;
+  //width: 108px;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.ranksWrapper {
+  text-align: center;
+}
+
+.rankText {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #0EF3CA;
+
+}
+
+.additionalServicesBlock {
+  padding-top: 16px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.50);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+  margin-top: 16px;
+
+}
+
+.servicesList {
+  margin-top: 26px;
+}
+
+.totalAmount {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.totalText {
+  color: #D9C17B;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.totalSum {
+  color: #111614;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 5px;
+  background: #D9C17B;
+  padding: 2px 4px;
+}
+
+
+.btn {
+  z-index: 100;
+  text-shadow: 0px -1px 0px #fff5d7;
+  font-weight: 900;
+  padding: 18px 28px 14px;
+  border-radius: 5px;
+  background: #0EF3CA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #41330B;
+  text-transform: uppercase;
+  font-size: 35px;
+  width: 100%;
+
+  &:disabled {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .9
+  }
+
+  svg {
+    @media (max-width: 660px) {
+      display: none;
+    }
+  }
+}
+
+.btnText {
+  margin-right: 16px;
+
+  @media (max-width: 660px) {
+    margin: 0;
+  }
+}
+
+.bottomText {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
+
+  @media (max-width: 1320px) {
+    margin-top: 32px;
+  }
+}
+
+.input {
+  height: 48px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-color: #0ECFAC;
+  cursor: pointer;
+  background: #B8EADC;
+  width: 100%;
+  font-family: 'Arial',sans-serif;
+  border-radius: 5px;
+
+  &::placeholder {
+    color: black;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+

@@ -1,0 +1,132 @@
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(90deg, #097764 0%, rgba(0, 0, 0, 0.00) 50%, #097764 100%);
+  z-index: 1000;
+  background-blend-mode: screen;
+
+  @media (max-width: 1320px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 744px) {
+    background: none;
+  }
+}
+
+.mainNav {
+  padding-inline: 76px;
+
+  @media (max-width: 1000px) {
+    padding-inline: 0;
+  }
+
+  li {
+    text-transform: uppercase;
+  }
+
+  li:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.secondItem {
+  margin-right: auto !important;
+}
+
+.navList {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 744px) {
+    display: none;
+  }
+}
+
+.headerLogo {
+  mix-blend-mode: normal;
+  width: 194px;
+  height: 232px;
+  z-index: 200;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (max-width: 1320px) {
+    width: 118px;
+    height: 141px;
+  }
+}
+
+.logoBg {
+  width: 316px;
+  height: 316px;
+  border-radius: 316px;
+  background: rgba(204, 177, 78, 0.50);
+  mix-blend-mode: color;
+  filter: blur(50px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+
+  @media (max-width: 1320px) {
+    transform: translate(-50%, -100px);
+    display: none;
+  }
+}
+
+.mobileVisible {
+  position: relative;
+  display: none;
+  z-index: 20;
+
+  @media (max-width: 744px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mobileLogoLink {
+  display: flex;
+  align-items: center;
+}
+
+.mobileMenu {
+  min-height: 200px;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #278776;
+}
+
+.mobileMenuOver {
+  background: #053830;
+  height: 100px;
+  width: 100%;
+}
+
+.mobileNav {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobileNavItem {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 80px;
+}

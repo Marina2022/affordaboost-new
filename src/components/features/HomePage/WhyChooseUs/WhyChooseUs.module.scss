@@ -1,0 +1,48 @@
+.whySection {
+  overflow: hidden ;
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+  background: url(@/assets/whyChooseUs/top-bg.png) top left no-repeat;
+  background-blend-mode: normal, normal, normal, color-dodge, luminosity;
+  background-size: auto, auto, auto, contain;
+  min-height: 3000px;
+}
+
+.title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+
+  @media (max-width: 744px) {
+    font-size: 40px;
+  }
+}
+
+.subtitle {
+  color: #D9C17B;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  @media (max-width: 744px) {
+    font-size: 24px;
+  }
+}
+
+.reachText {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 118px;
+
+  @media (max-width: 1320px) {
+    margin-bottom: 72px;
+  }
+}
