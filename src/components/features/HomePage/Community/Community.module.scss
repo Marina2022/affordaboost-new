@@ -127,14 +127,13 @@
   //width: calc(1288px + (100vw - 1288px)/2);
   width: 100%;
 
-
-
   @media (max-width: 1320px) {
     width: calc(100vw - 32px);
+    left: 16px;
   }
 
   @media (max-width: 500px) {
     width: calc(100vw - 16px);
-    left: 0px;
+    left: 16px;
   }
 }
